@@ -1,0 +1,1056 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>亚洲夜色三区午夜久干观看_都市夜游影像与深夜纪实_三区夜生活纪录</title>
+<meta name="description" content="亚洲夜色三区午夜久干观看聚焦东京、首尔、曼谷三座城市的深夜影像与夜生活纪实，收录街区夜游、深夜食堂、午夜档直播与新片上线条目，适合喜欢城市夜游与深夜纪录的人浏览。">
+<meta name="keywords" content="都市夜游影像,深夜食堂纪录,三区夜生活,午夜档直播,城市夜景短片">
+<style>
+:root{
+  --bg:#0b0f1a;
+  --bg-soft:#111827;
+  --panel:#161f30;
+  --panel-2:#1c2740;
+  --line:#27334a;
+  --line-soft:#1f2a3e;
+  --text:#e8edf6;
+  --text-2:#a9b6cd;
+  --text-3:#7c8aa5;
+  --accent:#ffb347;
+  --accent-2:#ff6b6b;
+  --accent-3:#4cc9f0;
+  --ok:#5ad1a0;
+  --radius:14px;
+  --radius-sm:9px;
+  --shadow:0 10px 30px rgba(0,0,0,.35);
+  --font:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  --head-h:60px;
+  --notice-h:40px;
+  --sticky:calc(var(--head-h) + var(--notice-h));
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--text);font-family:var(--font);
+  line-height:1.75;font-size:15px;-webkit-font-smoothing:antialiased;
+}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{margin:0;line-height:1.35;font-weight:700}
+p{margin:0 0 .9em}
+ul,ol{margin:0 0 .9em;padding-left:1.2em}
+li{margin-bottom:.35em}
+img{display:block;max-width:100%}
+section[id],div[id]{scroll-margin-top:calc(var(--sticky) + 16px)}
+
+/* ---------- 公告条 ---------- */
+.notice{
+  position:sticky;top:0;z-index:60;height:var(--notice-h);
+  background:linear-gradient(90deg,#221a0c,#1b1526 55%,#0e1a26);
+  border-bottom:1px solid var(--line);
+  display:flex;align-items:center;
+}
+.notice .wrap{display:flex;align-items:center;gap:14px;width:100%;overflow:hidden}
+.notice .tag{
+  flex:none;font-size:12px;font-weight:700;color:#1a1206;background:var(--accent);
+  padding:2px 9px;border-radius:20px;letter-spacing:.5px;
+}
+.notice .roll{
+  display:flex;gap:34px;white-space:nowrap;font-size:13px;color:var(--text-2);
+  animation:roll 26s linear infinite;
+}
+.notice .roll b{color:var(--accent);font-weight:600}
+@keyframes roll{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.notice .roll{animation:none}}
+
+/* ---------- 页头 ---------- */
+header.site{
+  position:sticky;top:var(--notice-h);z-index:55;height:var(--head-h);
+  background:rgba(11,15,26,.92);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+header.site .wrap{height:100%;display:flex;align-items:center;gap:20px}
+.brand{display:flex;align-items:center;gap:10px;flex:none}
+.brand .mark{width:30px;height:30px;flex:none}
+.brand .name{font-size:15.5px;font-weight:800;letter-spacing:.4px;white-space:nowrap}
+nav.main{display:flex;gap:4px;flex:1;overflow:auto;scrollbar-width:none}
+nav.main::-webkit-scrollbar{display:none}
+nav.main a{
+  font-size:13.5px;color:var(--text-2);padding:7px 11px;border-radius:8px;white-space:nowrap;
+  transition:.18s;
+}
+nav.main a:hover,nav.main a:focus-visible{color:var(--text);background:var(--panel-2)}
+.head-actions{display:flex;align-items:center;gap:8px;flex:none}
+.search-box{position:relative;display:flex;align-items:center}
+.search-box input{
+  width:170px;background:var(--panel);border:1px solid var(--line);color:var(--text);
+  border-radius:20px;padding:6px 12px 6px 30px;font-size:13px;font-family:inherit;outline:none;
+  transition:.2s;
+}
+.search-box input:focus{border-color:var(--accent);width:200px}
+.search-box svg{position:absolute;left:10px;width:14px;height:14px;stroke:var(--text-3)}
+.btn-ghost{
+  font-size:13px;padding:6px 13px;border-radius:20px;border:1px solid var(--line);
+  background:var(--panel);color:var(--text-2);cursor:pointer;font-family:inherit;transition:.18s;
+}
+.btn-ghost:hover,.btn-ghost:focus-visible{border-color:var(--accent);color:var(--accent)}
+.menu-toggle{display:none}
+:focus-visible{outline:2px solid var(--accent-3);outline-offset:2px}
+
+/* ---------- 容器 ---------- */
+.wrap{max-width:1320px;margin:0 auto;padding:0 22px}
+
+/* ---------- 首屏 ---------- */
+.hero{
+  position:relative;overflow:hidden;border-bottom:1px solid var(--line);
+  background:
+    radial-gradient(900px 380px at 12% -10%,rgba(255,179,71,.16),transparent 65%),
+    radial-gradient(700px 320px at 88% 0%,rgba(76,201,240,.12),transparent 60%),
+    linear-gradient(180deg,#0d1320,#0b0f1a);
+}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding-top:46px;padding-bottom:46px}
+.hero .kicker{
+  display:inline-flex;align-items:center;gap:8px;font-size:12.5px;color:var(--accent);
+  border:1px solid rgba(255,179,71,.35);border-radius:20px;padding:3px 12px;margin-bottom:18px;
+  letter-spacing:.6px;
+}
+.hero .kicker i{width:6px;height:6px;border-radius:50%;background:var(--accent);display:block;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+.hero h1{font-size:clamp(26px,3.4vw,40px);letter-spacing:.5px;margin-bottom:16px}
+.hero h1 span{color:var(--accent)}
+.hero .lead{color:var(--text-2);font-size:15.5px;max-width:560px;margin-bottom:22px}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+.btn-primary{
+  display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--accent),#ff8a3d);
+  color:#1a1206;font-weight:700;font-size:14px;padding:10px 20px;border-radius:24px;border:none;
+  cursor:pointer;font-family:inherit;box-shadow:0 6px 20px rgba(255,179,71,.25);transition:.2s;
+}
+.btn-primary:hover{transform:translateY(-1px);box-shadow:0 10px 26px rgba(255,179,71,.35)}
+.btn-outline{
+  display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);color:var(--text-2);
+  font-size:14px;padding:10px 20px;border-radius:24px;background:transparent;cursor:pointer;
+  font-family:inherit;transition:.2s;
+}
+.btn-outline:hover{border-color:var(--accent-3);color:var(--accent-3)}
+.hero-stats{display:flex;gap:26px;margin-top:28px;flex-wrap:wrap}
+.hero-stats div{font-size:12.5px;color:var(--text-3)}
+.hero-stats div b{display:block;font-size:21px;color:var(--text);font-weight:800;letter-spacing:.5px}
+
+/* 首屏视觉：夜景城市 SVG */
+.hero-visual{position:relative;aspect-ratio:1/1;max-width:420px;margin-left:auto;width:100%}
+.hero-visual svg{width:100%;height:100%;display:block;filter:drop-shadow(0 14px 40px rgba(0,0,0,.5))}
+.hero-visual .badge{
+  position:absolute;right:6px;bottom:10px;background:rgba(17,24,39,.9);border:1px solid var(--line);
+  border-radius:12px;padding:8px 13px;font-size:12px;color:var(--text-2);box-shadow:var(--shadow);
+}
+.hero-visual .badge b{color:var(--accent);font-size:14px}
+
+/* ---------- 三栏 ---------- */
+.layout{display:grid;grid-template-columns:180px minmax(0,1fr) 250px;gap:28px;padding:34px 0 10px;align-items:start}
+aside.left,aside.right{position:sticky;top:calc(var(--sticky) + 18px);font-size:13.5px}
+.side-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:14px 15px;margin-bottom:16px}
+.side-card h3{font-size:12.5px;color:var(--text-3);letter-spacing:1px;font-weight:700;margin-bottom:10px;text-transform:uppercase}
+.channel-list{list-style:none;padding:0;margin:0}
+.channel-list a{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:6px 9px;border-radius:8px;color:var(--text-2);transition:.16s;font-size:13.5px}
+.channel-list a:hover,.channel-list a:focus-visible{background:var(--panel-2);color:var(--accent)}
+.channel-list a em{font-style:normal;font-size:11px;color:var(--text-3);background:var(--bg-soft);border-radius:6px;padding:1px 6px}
+.hot-list{list-style:none;padding:0;margin:0;counter-reset:h}
+.hot-list li{counter-increment:h;display:flex;gap:9px;padding:7px 0;border-bottom:1px dashed var(--line-soft);font-size:13px;color:var(--text-2);line-height:1.5}
+.hot-list li:last-child{border:none}
+.hot-list li::before{content:counter(h);flex:none;width:18px;height:18px;border-radius:5px;background:var(--panel-2);color:var(--text-3);font-size:11px;display:grid;place-items:center;font-weight:700;margin-top:2px}
+.hot-list li:nth-child(-n+3)::before{background:rgba(255,179,71,.18);color:var(--accent)}
+.update-flow{list-style:none;padding:0;margin:0;font-size:12.5px}
+.update-flow li{padding:7px 0;border-bottom:1px dashed var(--line-soft);color:var(--text-2)}
+.update-flow li:last-child{border:none}
+.update-flow time{display:block;font-size:11px;color:var(--text-3);margin-top:2px}
+
+/* ---------- 主内容 ---------- */
+main{min-width:0}
+.block{margin-bottom:42px}
+.block-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:16px;border-bottom:1px solid var(--line);padding-bottom:10px}
+.block-head h2{font-size:19px;letter-spacing:.4px;display:flex;align-items:center;gap:9px}
+.block-head h2::before{content:"";width:4px;height:17px;border-radius:2px;background:linear-gradient(180deg,var(--accent),var(--accent-2))}
+.block-head .sub{font-size:12.5px;color:var(--text-3);flex:none}
+.overview p{color:var(--text-2);font-size:14.5px;text-align:justify}
+.overview strong{color:var(--text);font-weight:600}
+
+/* 卡片网格 */
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.card{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;
+  display:flex;flex-direction:column;transition:.2s;
+}
+.card:hover{border-color:rgba(255,179,71,.45);transform:translateY(-2px);box-shadow:var(--shadow)}
+.card .thumb{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--bg-soft)}
+.card .thumb img{width:100%;height:100%;object-fit:cover;transition:.35s}
+.card:hover .thumb img{transform:scale(1.05)}
+.card .thumb .type{
+  position:absolute;left:9px;top:9px;font-size:11px;background:rgba(11,15,26,.82);
+  border:1px solid var(--line);color:var(--accent);padding:2px 8px;border-radius:20px;backdrop-filter:blur(4px);
+}
+.card .thumb .score{
+  position:absolute;right:9px;bottom:9px;font-size:12px;font-weight:800;color:#1a1206;
+  background:var(--accent);padding:1px 8px;border-radius:6px;
+}
+.card .body{padding:12px 13px 14px;flex:1;display:flex;flex-direction:column}
+.card h3{font-size:14.5px;margin-bottom:7px;line-height:1.45}
+.card .desc{font-size:12.8px;color:var(--text-2);line-height:1.65;flex:1;margin-bottom:10px}
+.tags{display:flex;flex-wrap:wrap;gap:5px}
+.tag{font-size:11px;color:var(--text-3);background:var(--bg-soft);border:1px solid var(--line-soft);border-radius:6px;padding:1px 7px}
+
+/* 动态列表 */
+.feed{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 20px}
+.feed-item{display:flex;gap:11px;padding:10px 0;border-bottom:1px dashed var(--line-soft);align-items:flex-start}
+.feed-item .dot{flex:none;width:7px;height:7px;border-radius:50%;background:var(--accent-3);margin-top:8px;box-shadow:0 0 0 3px rgba(76,201,240,.14)}
+.feed-item .dot.warm{background:var(--accent);box-shadow:0 0 0 3px rgba(255,179,71,.14)}
+.feed-item .txt{min-width:0}
+.feed-item .txt b{display:block;font-size:13.5px;font-weight:600;margin-bottom:2px}
+.feed-item .txt span{font-size:12.5px;color:var(--text-2)}
+.feed-item time{flex:none;font-size:11.5px;color:var(--text-3);margin-left:auto;white-space:nowrap}
+
+/* 分类 */
+.cats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:11px}
+.cat-btn{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:13px 12px;text-align:left;cursor:pointer;font-family:inherit;color:var(--text);
+  transition:.18s;display:flex;flex-direction:column;gap:3px;
+}
+.cat-btn b{font-size:14px;font-weight:700}
+.cat-btn span{font-size:11.5px;color:var(--text-3)}
+.cat-btn:hover,.cat-btn:focus-visible{border-color:var(--accent);background:var(--panel-2)}
+.cat-btn.active{border-color:var(--accent);background:linear-gradient(160deg,rgba(255,179,71,.16),var(--panel-2));box-shadow:inset 0 0 0 1px rgba(255,179,71,.3)}
+.filter-note{font-size:12.5px;color:var(--text-3);margin:12px 0 0}
+.no-result{display:none;padding:22px;text-align:center;color:var(--text-3);font-size:13.5px;border:1px dashed var(--line);border-radius:var(--radius)}
+
+/* 深度解析 */
+.deep{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:26px 28px}
+.deep h2{font-size:20px;margin-bottom:6px}
+.deep .sub{font-size:12.5px;color:var(--text-3);margin-bottom:20px}
+.deep h3{font-size:15.5px;color:var(--accent);margin:22px 0 9px;padding-left:11px;border-left:3px solid var(--accent)}
+.deep p,.deep li{color:var(--text-2);font-size:14.3px;text-align:justify}
+.deep ul{padding-left:1.1em}
+.deep strong{color:var(--text);font-weight:600}
+
+/* 体验指南 步骤 */
+.steps{counter-reset:s;display:grid;gap:12px}
+.step{
+  counter-increment:s;position:relative;background:var(--panel);border:1px solid var(--line);
+  border-radius:var(--radius);padding:15px 18px 15px 58px;
+}
+.step::before{
+  content:counter(s,decimal-leading-zero);position:absolute;left:16px;top:15px;
+  font-size:17px;font-weight:800;color:var(--accent);letter-spacing:.5px;
+}
+.step b{display:block;font-size:14.5px;margin-bottom:4px}
+.step p{margin:0;font-size:13.3px;color:var(--text-2)}
+
+/* FAQ */
+.faq details{border:1px solid var(--line);border-radius:var(--radius-sm);background:var(--panel);margin-bottom:9px;overflow:hidden}
+.faq summary{
+  cursor:pointer;padding:13px 16px;font-size:14px;font-weight:600;list-style:none;
+  display:flex;justify-content:space-between;align-items:center;gap:12px;transition:.16s;
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-size:18px;color:var(--accent);font-weight:400;transition:.2s;flex:none}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq summary:hover{background:var(--panel-2)}
+.faq .ans{padding:0 16px 14px;font-size:13.4px;color:var(--text-2);border-top:1px dashed var(--line-soft);padding-top:11px;margin-top:0}
+
+/* 评论 */
+.comments{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:11px}
+.cmt{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);padding:12px 14px}
+.cmt .top{display:flex;align-items:center;gap:8px;margin-bottom:6px}
+.cmt .avatar{
+  width:26px;height:26px;border-radius:50%;flex:none;display:grid;place-items:center;
+  font-size:11.5px;font-weight:800;color:#0b0f1a;background:linear-gradient(135deg,var(--accent-3),var(--ok));
+}
+.cmt .who{font-size:12.8px;font-weight:600}
+.cmt time{font-size:11px;color:var(--text-3);margin-left:auto}
+.cmt p{margin:0;font-size:13px;color:var(--text-2);line-height:1.65}
+
+/* 资讯 */
+.news{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.news-item{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
+.news-item img{width:100%;height:132px;object-fit:cover}
+.news-item .in{padding:12px 14px 14px}
+.news-item h3{font-size:14px;margin-bottom:6px}
+.news-item time{font-size:11.5px;color:var(--accent);display:block;margin-bottom:5px;letter-spacing:.4px}
+.news-item p{margin:0;font-size:12.8px;color:var(--text-2)}
+
+/* 相关推荐 标签索引 */
+.tag-index{display:flex;flex-wrap:wrap;gap:9px}
+.tag-index a{
+  font-size:13px;padding:7px 14px;border-radius:20px;background:var(--panel);
+  border:1px solid var(--line);color:var(--text-2);transition:.18s;
+}
+.tag-index a:hover,.tag-index a:focus-visible{border-color:var(--accent);color:var(--accent);background:var(--panel-2)}
+
+/* 榜单 */
+.rank{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.rank-row{display:grid;grid-template-columns:38px 1fr 88px 76px;gap:12px;align-items:center;padding:11px 16px;border-bottom:1px solid var(--line-soft);font-size:13.5px}
+.rank-row:last-child{border:none}
+.rank-row .no{font-size:15px;font-weight:800;color:var(--text-3)}
+.rank-row:nth-child(1) .no{color:var(--accent-2)}
+.rank-row:nth-child(2) .no{color:var(--accent)}
+.rank-row:nth-child(3) .no{color:var(--accent-3)}
+.rank-row .nm b{display:block;font-size:13.8px}
+.rank-row .nm span{font-size:11.5px;color:var(--text-3)}
+.rank-row .cat{font-size:11.5px;color:var(--text-3)}
+.rank-row .heat{font-size:12px;color:var(--accent);text-align:right;font-weight:700}
+.rank-head{background:var(--panel-2);font-size:12px;color:var(--text-3);letter-spacing:.6px}
+
+/* 页尾 */
+footer.site{border-top:1px solid var(--line);background:#090d15;margin-top:30px;padding:38px 0 26px}
+.foot-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:30px;margin-bottom:26px}
+.foot-brand .brand{margin-bottom:12px}
+.foot-brand p{font-size:13px;color:var(--text-3);max-width:280px;margin-bottom:10px}
+.foot-col h4{font-size:12.5px;color:var(--text-2);letter-spacing:1px;margin-bottom:10px}
+.foot-col a{display:block;font-size:13px;color:var(--text-3);padding:3px 0;transition:.16s}
+.foot-col a:hover{color:var(--accent)}
+.foot-bottom{border-top:1px solid var(--line-soft);padding-top:16px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12px;color:var(--text-3)}
+.foot-bottom span{line-height:1.7}
+
+/* ---------- 响应式 ---------- */
+@media (max-width:1120px){
+  .layout{grid-template-columns:170px minmax(0,1fr);gap:24px}
+  aside.right{display:none}
+  .cards{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cats{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:1024px){
+  .hero .wrap{grid-template-columns:1fr;gap:28px;padding-top:36px;padding-bottom:36px}
+  .hero-visual{max-width:320px;margin:0 auto;order:-1}
+  nav.main{display:none}
+  .menu-toggle{display:inline-flex}
+  nav.main.open{
+    display:flex;position:absolute;left:0;right:0;top:var(--head-h);flex-direction:column;
+    background:var(--bg-soft);border-bottom:1px solid var(--line);padding:10px 22px 16px;gap:2px;
+    z-index:50;
+  }
+  nav.main.open a{padding:10px 12px;font-size:14px}
+  .layout{grid-template-columns:1fr;gap:0}
+  aside.left{position:static;order:2;margin-top:30px}
+  aside.left .side-card{margin-bottom:14px}
+  main{order:1}
+  .channel-list{display:flex;flex-wrap:wrap;gap:6px}
+  .channel-list li{flex:1 1 auto}
+  .channel-list a{background:var(--panel-2)}
+  .channel-list a em{display:none}
+  .foot-grid{grid-template-columns:1fr 1fr;gap:24px}
+}
+@media (max-width:740px){
+  body{font-size:14.5px}
+  .wrap{padding:0 15px}
+  .notice .wrap{gap:10px}
+  .notice .roll{gap:22px;font-size:12px}
+  .search-box input{width:110px}
+  .search-box input:focus{width:130px}
+  .head-actions .btn-ghost{display:none}
+  .hero-stats{gap:18px}
+  .cards{grid-template-columns:1fr}
+  .feed{grid-template-columns:1fr;gap:0}
+  .cats{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .comments{grid-template-columns:1fr}
+  .news{grid-template-columns:1fr}
+  .deep{padding:20px 16px}
+  .rank-row{grid-template-columns:30px 1fr 62px;gap:9px;padding:10px 12px;font-size:13px}
+  .rank-row .cat{display:none}
+  .foot-grid{grid-template-columns:1fr}
+  .foot-bottom{flex-direction:column;gap:8px}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<div class="notice">
+  <div class="wrap">
+    <span class="tag">本周更新</span>
+    <div class="roll" aria-hidden="false">
+      <span>新增 <b>12 条</b> 三区深夜街区纪录 · 11 月 25 日</span>
+      <span>《新宿二丁目雨夜》第 4 段上线 · 11 月 24 日</span>
+      <span>曼谷是隆路午夜档直播回放已归档 · 11 月 23 日</span>
+      <span>首尔乙支路深夜食堂新季定档 12 月 3 日 · 11 月 22 日</span>
+      <span>新增 <b>12 条</b> 三区深夜街区纪录 · 11 月 25 日</span>
+      <span>《新宿二丁目雨夜》第 4 段上线 · 11 月 24 日</span>
+      <span>曼谷是隆路午夜档直播回放已归档 · 11 月 23 日</span>
+      <span>首尔乙支路深夜食堂新季定档 12 月 3 日 · 11 月 22 日</span>
+    </div>
+  </div>
+</div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/#top" aria-label="亚洲夜色三区午夜久干观看 首页">
+      <svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#ffb347"/><stop offset="1" stop-color="#ff6b6b"/>
+          </linearGradient>
+        </defs>
+        <rect x="1" y="1" width="38" height="38" rx="11" stroke="url(#lg)" stroke-width="1.6"/>
+        <circle cx="20" cy="15" r="6" fill="url(#lg)" opacity=".9"/>
+        <path d="M7 30c3.2-5.4 7.6-8.2 13-8.2S29.8 24.6 33 30" stroke="url(#lg)" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+        <circle cx="20" cy="15" r="2.6" fill="#0b0f1a"/>
+      </svg>
+      <span class="name">亚洲夜色三区午夜久干观看</span>
+    </a>
+
+    <nav class="main" id="mainNav" aria-label="主题导航">
+      <a href="/#overview">领域概览</a>
+      <a href="/#picks">精选条目</a>
+      <a href="/#updates">午夜动态</a>
+      <a href="/#cats">分类筛选</a>
+      <a href="/#deep">深度解析</a>
+      <a href="/#guide">观看路径</a>
+      <a href="/#faq">常见问答</a>
+      <a href="/#rank">三区榜单</a>
+    </nav>
+
+    <div class="head-actions">
+      <div class="search-box">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        <input type="search" id="siteSearch" placeholder="搜索街区 / 条目" aria-label="搜索街区或条目名称">
+      </div>
+      <button class="btn-ghost menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="mainNav">栏目</button>
+    </div>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="kicker"><i></i>东京 · 首尔 · 曼谷 三城午夜记录</span>
+      <h1>亚洲夜色三区午夜久干观看</h1>
+      <p class="lead">把东京新宿二丁目、首尔乙支路、曼谷是隆路三条深夜街区放进同一份观看清单：街区夜游纪录、深夜食堂短篇、午夜档直播回放与城市夜景短片，按街区与时段整理，适合习惯在深夜打开屏幕、想看真实街道质感的人。</p>
+      <div class="cta">
+        <a class="btn-primary" href="/#picks">查看精选 9 条</a>
+        <a class="btn-outline" href="/#updates">今天更新的条目</a>
+      </div>
+      <div class="hero-stats">
+        <div><b>3</b>核心街区</div>
+        <div><b>126</b>午夜条目</div>
+        <div><b>11-25</b>最近更新</div>
+        <div><b>42</b>深夜直播回放</div>
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="true">
+      <svg viewBox="0 0 400 400" role="img">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#131c30"/><stop offset="1" stop-color="#0b0f1a"/>
+          </linearGradient>
+          <linearGradient id="win" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0" stop-color="#ffb347"/><stop offset="1" stop-color="#ff6b6b"/>
+          </linearGradient>
+          <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+            <stop offset="0" stop-color="#ffb347" stop-opacity=".5"/><stop offset="1" stop-color="#ffb347" stop-opacity="0"/>
+          </radialGradient>
+        </defs>
+        <rect width="400" height="400" rx="24" fill="url(#sky)"/>
+        <circle cx="300" cy="82" r="34" fill="url(#glow)"/>
+        <circle cx="300" cy="82" r="17" fill="#ffd9a0" opacity=".85"/>
+        <g fill="#182338">
+          <rect x="34" y="150" width="54" height="180" rx="4"/>
+          <rect x="98" y="108" width="46" height="222" rx="4"/>
+          <rect x="154" y="170" width="60" height="160" rx="4"/>
+          <rect x="224" y="132" width="44" height="198" rx="4"/>
+          <rect x="278" y="176" width="52" height="154" rx="4"/>
+          <rect x="340" y="146" width="34" height="184" rx="4"/>
+        </g>
+        <g fill="url(#win)" opacity=".82">
+          <rect x="44" y="164" width="8" height="12" rx="1.5"/><rect x="60" y="164" width="8" height="12" rx="1.5"/>
+          <rect x="44" y="190" width="8" height="12" rx="1.5"/><rect x="60" y="212" width="8" height="12" rx="1.5"/>
+          <rect x="108" y="124" width="7" height="11" rx="1.5"/><rect x="124" y="146" width="7" height="11" rx="1.5"/>
+          <rect x="108" y="176" width="7" height="11" rx="1.5"/><rect x="124" y="206" width="7" height="11" rx="1.5"/>
+          <rect x="166" y="186" width="9" height="13" rx="1.5"/><rect x="188" y="186" width="9" height="13" rx="1.5"/>
+          <rect x="166" y="216" width="9" height="13" rx="1.5"/><rect x="188" y="248" width="9" height="13" rx="1.5"/>
+          <rect x="234" y="150" width="8" height="12" rx="1.5"/><rect x="250" y="176" width="8" height="12" rx="1.5"/>
+          <rect x="234" y="204" width="8" height="12" rx="1.5"/>
+          <rect x="290" y="192" width="8" height="12" rx="1.5"/><rect x="310" y="192" width="8" height="12" rx="1.5"/>
+          <rect x="290" y="222" width="8" height="12" rx="1.5"/><rect x="310" y="254" width="8" height="12" rx="1.5"/>
+          <rect x="348" y="164" width="7" height="11" rx="1.5"/><rect x="360" y="194" width="7" height="11" rx="1.5"/>
+        </g>
+        <path d="M0 340 L400 340 L400 400 L0 400 Z" fill="#0a0e17"/>
+        <path d="M0 340 L400 340" stroke="#2a3category" stroke-width="0"/>
+        <g stroke="#2b3a55" stroke-width="1.4" opacity=".7">
+          <path d="M0 356 H400"/><path d="M0 376 H400"/>
+        </g>
+        <g fill="#ffb347" opacity=".9">
+          <circle cx="70" cy="348" r="3"/><circle cx="140" cy="348" r="3"/><circle cx="212" cy="348" r="3"/>
+          <circle cx="286" cy="348" r="3"/><circle cx="352" cy="348" r="3"/>
+        </g>
+        <g fill="#ff6b6b" opacity=".55">
+          <circle cx="104" cy="368" r="2.4"/><circle cx="180" cy="368" r="2.4"/><circle cx="252" cy="368" r="2.4"/>
+          <circle cx="322" cy="368" r="2.4"/>
+        </g>
+      </svg>
+      <div class="badge">今晚 <b>7</b> 条午夜档直播</div>
+    </div>
+  </div>
+</section>
+
+<div class="wrap">
+  <div class="layout">
+
+    <!-- 左频道栏 -->
+    <aside class="left">
+      <div class="side-card">
+        <h3>街区频道</h3>
+        <ul class="channel-list">
+          <li><a href="/#picks">新宿二丁目 <em>58</em></a></li>
+          <li><a href="/#picks">涩谷道玄坂 <em>34</em></a></li>
+          <li><a href="/#picks">首尔乙支路 <em>41</em></a></li>
+          <li><a href="/#picks">弘大夜街 <em>27</em></a></li>
+          <li><a href="/#picks">曼谷是隆路 <em>46</em></a></li>
+          <li><a href="/#picks">考山路夜市 <em>39</em></a></li>
+          <li><a href="/#guide">深夜食堂短篇 <em>31</em></a></li>
+          <li><a href="/#updates">午夜档直播回放 <em>42</em></a></li>
+          <li><a href="/#deep">城市夜景短片 <em>63</em></a></li>
+          <li><a href="/#rank">通宵路线纪录 <em>22</em></a></li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h3>观看提示</h3>
+        <p style="font-size:12.5px;color:var(--text-3);margin:0">条目按当地午夜时段归档；直播回放保留 30 天，街区纪录长期可看。深夜观看建议开启低亮度模式。</p>
+      </div>
+    </aside>
+
+    <!-- 主内容 -->
+    <main>
+
+      <!-- 1 领域概览 -->
+      <section class="block overview" id="overview">
+        <div class="block-head">
+          <h2>三区午夜影像涵盖哪些方向</h2>
+          <span class="sub">阅读约 3 分钟</span>
+        </div>
+        <p><strong>亚洲夜色三区午夜久干观看</strong>所指的内容，是围绕东京、首尔、曼谷三座城市在午夜前后真实运行的街区影像记录。它不是泛泛的城市宣传片，而是把镜头留在街道、店铺、车站口和便利店门口，记录当地人真正在深夜做什么、吃什么、聊什么。目前这个方向大致分成五类内容：街区夜游纪录、深夜食堂短篇、午夜档直播回放、城市夜景短片、通宵路线纪录。</p>
+        <p>街区夜游纪录是主体，通常以一条街或一个路口为单位，长度在 20 到 50 分钟之间，画面以手持跟拍为主，保留环境音与偶尔的路人对话。深夜食堂短篇更短，聚焦一家店、一道菜和店主的一段自述，适合在睡前二十分钟内看完。午夜档直播回放来自固定机位或主播手机，内容的随机性最强，也最容易出现真实的街头状况。城市夜景短片偏向画面与剪辑，适合当作背景播放。通宵路线纪录则把多处地点串成一条时间线，从傍晚一路记录到清晨。</p>
+        <p>三座城市的气质差异明显：东京的深夜秩序感强，街道干净、营业时间精确，纪录里常出现末班车前后的人流变化；首尔的深夜更热闹，乙支路一带的老式餐馆与弘大的街头演出并存；曼谷的午夜则始终带着温度与噪音，是隆路的摊位在凌晨仍然营业。这也是三区并置观看的价值所在——同一时段、不同城市，生活节奏完全不同。</p>
+      </section>
+
+      <!-- 2 精选条目 -->
+      <section class="block" id="picks">
+        <div class="block-head">
+          <h2>精选午夜条目</h2>
+          <span class="sub">9 条 · 按街区与时段</span>
+        </div>
+        <div class="cards" id="pickGrid">
+
+          <article class="card" data-cat="东京">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/shinjuku-night41/400/300" width="400" height="300" loading="lazy" alt="新宿二丁目雨夜街区纪录封面">
+              <span class="type">街区纪录</span>
+              <span class="score">9.1</span>
+            </div>
+            <div class="body">
+              <h3>新宿二丁目雨夜三小时</h3>
+              <p class="desc">从末班车前的一小时拍到凌晨两点，记录雨天里酒吧门口的排队、便利店热食柜的补货节奏，以及雨停后突然变空的巷子。</p>
+              <div class="tags"><span class="tag">东京</span><span class="tag">雨夜</span><span class="tag">末班车</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="东京">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/daikanyama-cafe17/400/300" width="400" height="300" loading="lazy" alt="涩谷道玄坂深夜拉面店纪录封面">
+              <span class="type">深夜食堂</span>
+              <span class="score">8.7</span>
+            </div>
+            <div class="body">
+              <h3>道玄坂背巷的凌晨拉面</h3>
+              <p class="desc">一家只开晚上十点到凌晨四点的拉面店，店主每天只熬一锅汤。片子拍完了熬汤、备料和最后一位客人的整段对话。</p>
+              <div class="tags"><span class="tag">东京</span><span class="tag">拉面</span><span class="tag">店铺日常</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="首尔">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/euljiro-food28/400/300" width="400" height="300" loading="lazy" alt="首尔乙支路深夜布帐马车纪录封面">
+              <span class="type">街区纪录</span>
+              <span class="score">8.9</span>
+            </div>
+            <div class="body">
+              <h3>乙支路布帐马车的午夜</h3>
+              <p class="desc">老工业区改造后留下的布帐马车一条街，片子在凌晨一点到三点之间拍摄，记录下班工人与年轻客人在同一张塑料桌前碰杯。</p>
+              <div class="tags"><span class="tag">首尔</span><span class="tag">布帐马车</span><span class="tag">老城区</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="首尔">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/hongdae-street09/400/300" width="400" height="300" loading="lazy" alt="弘大夜街街头演出纪录封面">
+              <span class="type">城市短片</span>
+              <span class="score">8.4</span>
+            </div>
+            <div class="body">
+              <h3>弘大夜街的最后一支歌</h3>
+              <p class="desc">跟拍三组街头表演者从晚上十点到收摊，记录他们如何选择位置、何时收工，以及最后一首歌通常唱给谁听。</p>
+              <div class="tags"><span class="tag">首尔</span><span class="tag">街头演出</span><span class="tag">收摊时刻</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="曼谷">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/silom-live33/400/300" width="400" height="300" loading="lazy" alt="曼谷是隆路午夜档直播回放封面">
+              <span class="type">直播回放</span>
+              <span class="score">8.6</span>
+            </div>
+            <div class="body">
+              <h3>是隆路午夜档直播回放 11-23</h3>
+              <p class="desc">固定机位对着是隆路与拉玛四路交口，两小时里记录了摩托车流、路边烧烤摊起烟和突降的一阵夜雨。</p>
+              <div class="tags"><span class="tag">曼谷</span><span class="tag">固定机位</span><span class="tag">路口</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="曼谷">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/khaosan-night22/400/300" width="400" height="300" loading="lazy" alt="考山路夜市凌晨收摊纪录封面">
+              <span class="type">街区纪录</span>
+              <span class="score">8.3</span>
+            </div>
+            <div class="body">
+              <h3>考山路凌晨四点的收摊</h3>
+              <p class="desc">不拍最热闹的十一点，专拍四点后的清场：摊主拆棚、扫街车进场、地上剩下的塑料杯被一车车拉走。</p>
+              <div class="tags"><span class="tag">曼谷</span><span class="tag">夜市</span><span class="tag">收摊</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="东京">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/tokyo-conbini14/400/300" width="400" height="300" loading="lazy" alt="东京便利店深夜补货纪录封面">
+              <span class="type">城市短片</span>
+              <span class="score">8.8</span>
+            </div>
+            <div class="body">
+              <h3>便利店凌晨补货的四十分钟</h3>
+              <p class="desc">把镜头固定在一家便利店的熟食柜前，记录凌晨一点补货全过程，以及这个时段进店的都是些什么人。</p>
+              <div class="tags"><span class="tag">东京</span><span class="tag">便利店</span><span class="tag">补货</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="首尔">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/seoul-bus06/400/300" width="400" height="300" loading="lazy" alt="首尔深夜公交末班线路纪录封面">
+              <span class="type">通宵路线</span>
+              <span class="score">8.5</span>
+            </div>
+            <div class="body">
+              <h3>首尔深夜巴士 N26 全程</h3>
+              <p class="desc">从江北到江南跟完整条深夜巴士线路，记录每一站上下车的人数变化，以及司机在终点站休息的十五分钟。</p>
+              <div class="tags"><span class="tag">首尔</span><span class="tag">深夜巴士</span><span class="tag">通宵</span></div>
+            </div>
+          </article>
+
+          <article class="card" data-cat="曼谷">
+            <div class="thumb">
+              <img src="https://picsum.photos/seed/bangkok-boat12/400/300" width="400" height="300" loading="lazy" alt="曼谷湄南河夜航短片封面">
+              <span class="type">城市短片</span>
+              <span class="score">8.2</span>
+            </div>
+            <div class="body">
+              <h3>湄南河夜航十二分钟</h3>
+              <p class="desc">从码头到对岸的短程渡船，全程只保留船机声和河水声，画面是两岸灯光在夜里的移动速度。</p>
+              <div class="tags"><span class="tag">曼谷</span><span class="tag">渡船</span><span class="tag">环境音</span></div>
+            </div>
+          </article>
+
+        </div>
+        <p class="no-result" id="noResult">没有找到匹配的条目，试试输入“东京”“首尔”“曼谷”或具体街区名。</p>
+      </section>
+
+      <!-- 3 动态 -->
+      <section class="block" id="updates">
+        <div class="block-head">
+          <h2>午夜动态 · 今日更新</h2>
+          <span class="sub">11 月 25 日 · 10 条</span>
+        </div>
+        <div class="feed">
+          <div class="feed-item"><span class="dot warm"></span><div class="txt"><b>《新宿二丁目雨夜三小时》第 4 段上线</b><span>新增雨停后巷子变空的一段，长度 9 分钟。</span></div><time>今天 09:30</time></div>
+          <div class="feed-item"><span class="dot"></span><div class="txt"><b>乙支路布帐马车补拍完成</b><span>补入凌晨三点后的收摊画面，本周内上线。</span></div><time>今天 08:10</time></div>
+          <div class="feed-item"><span class="dot"></span><div class="txt"><b>是隆路口直播回放归档</b><span>11 月 23 日场次已转为回放，保留 30 天。</span></div><time>昨天 22:40</time></div>
+          <div class="feed-item"><span class="dot warm"></span><div class="txt"><b>考山路收摊纪录开放观看</b><span>原先仅限夜间时段，现全天可播。</span></div><time>昨天 21:10</time></div>
+          <div class="feed-item"><span class="dot"></span><div class="txt"><b>首尔深夜巴士 N26 更新站序</b><span>线路调整，末两站顺序改为合井后江南。</span></div><time>11 月 23 日</time></div>
+          <div class="feed-item"><span class="dot"></span><div class="txt"><b>道玄坂拉面店临时休业记录</b><span>店主休业三天，片尾补了说明字幕。</span></div><time>11 月 22 日</time></div>
+          <div class="feed-item"><span class="dot warm"></span><div class="txt"><b>弘大夜街新增两组表演者</b><span>补充了架子鼓与手风琴组合的收摊段落。</span></div><time>11 月 21 日</time></div>
+          <div class="feed-item"><span class="dot"></span><div class="txt"><b>湄南河夜航换成新渡船</b><span>旧船退役，重拍了一版十二分钟航线。</span></div><time>11 月 20 日</time></div>
+          <div class="feed-item"><span class="dot"></span><div class="txt"><b>便利店补货片加注时间码</b><span>全片标注了每个动作发生的具体分钟。</span></div><time>11 月 19 日</time></div>
+          <div class="feed-item"><span class="dot"></span><div class="txt"><b>三区通宵路线专题新增两条</b><span>东京山手线外圈、曼谷素坤逸支线。</span></div><time>11 月 18 日</time></div>
+        </div>
+      </section>
+
+      <!-- 4 分类 -->
+      <section class="block" id="cats">
+        <div class="block-head">
+          <h2>按街区与类型筛选</h2>
+          <span class="sub">点击筛选上方条目</span>
+        </div>
+        <div class="cats" role="group" aria-label="条目分类筛选">
+          <button class="cat-btn active" data-filter="all"><b>全部条目</b><span>9 条</span></button>
+          <button class="cat-btn" data-filter="东京"><b>东京</b><span>新宿 · 涩谷</span></button>
+          <button class="cat-btn" data-filter="首尔"><b>首尔</b><span>乙支路 · 弘大</span></button>
+          <button class="cat-btn" data-filter="曼谷"><b>曼谷</b><span>是隆 · 考山</span></button>
+          <button class="cat-btn" data-filter="街区"><b>街区纪录</b><span>长镜头跟拍</span></button>
+          <button class="cat-btn" data-filter="食堂"><b>深夜食堂</b><span>一店一菜</span></button>
+          <button class="cat-btn" data-filter="直播"><b>直播回放</b><span>固定机位</span></button>
+          <button class="cat-btn" data-filter="短片"><b>城市短片</b><span>画面优先</span></button>
+        </div>
+        <p class="filter-note">分类同时对应街区与内容类型；选择后仅显示匹配条目，再次点击“全部条目”恢复。</p>
+      </section>
+
+      <!-- 5 深度解析 -->
+      <section class="block" id="deep">
+        <div class="deep">
+          <h2>三类午夜影像的差异与观看判断</h2>
+          <p class="sub">深度解析 · 约 800 字</p>
+
+          <p>同样是深夜影像，街区纪录、深夜食堂短篇和午夜档直播回放在拍摄逻辑上差别很大，直接决定了你该在什么状态下看它们。</p>
+
+          <h3>街区纪录：看的是时间流动</h3>
+          <p>街区纪录的核心不是某个地点，而是时间。一条街在晚上十点、十二点、两点、四点会呈现完全不同的状态，好的纪录会刻意保留这种推移。判断一条街区纪录是否值得看完，可以看三个信号：</p>
+          <ul>
+            <li><strong>是否保留环境音。</strong>只配音乐、掐掉街道声的片子，通常会丢掉最有信息量的部分，比如卷帘门落下的声音、清扫车的提示音。</li>
+            <li><strong>有没有拍到“转换点”。</strong>末班车前后、店铺换班、夜市收摊，这些时刻能反映一个街区的真实结构。</li>
+            <li><strong>镜头是否愿意停留。</strong>愿意在一个路口站够三分钟不剪的片子，通常比快切十次的更耐看。</li>
+          </ul>
+          <p>以《新宿二丁目雨夜三小时》为例，它把雨天作为变量，雨停后巷子突然变空，这个反差本身就是内容。而《考山路凌晨四点的收摊》则故意避开最热闹的时段，选择清场过程，这类片子的信息密度往往更高。</p>
+
+          <h3>深夜食堂短篇：看的是人和一道菜</h3>
+          <p>这类内容长度通常在 10 到 25 分钟，结构固定：进店、看菜单、看备料、吃、聊天。它的价值不在菜品本身，而在于店主为什么选择只在这个时段营业。观看时可以先看片头是否交代了营业时间与客群，再看有没有一段完整的对话——有对话的版本通常比纯空镜版本更有记忆点。</p>
+
+          <h3>午夜档直播回放：看的是不可控</h3>
+          <p>直播回放和剪辑过的纪录最大的区别是，它不会替你删掉无聊的部分。固定机位两小时里可能有一小时什么都没发生，但也正因如此，突发的一场夜雨、一次争执、一辆停在路口的改装车，才显得真实。看直播回放建议直接跳到整点前后十分钟，那是人流变化最明显的时段。</p>
+
+          <h3>三座城市的节奏差异</h3>
+          <p>把三区放在一起看，会发现深夜的定义并不相同。东京的深夜有明确的边界，末班车是一道分水岭，之后街道迅速安静；首尔的深夜延长得更久，乙支路一带到三点仍有客人在续摊；曼谷的午夜则几乎没有结束的仪式感，摊位在四点收，五点又有早市接上。理解这个差异，能帮你判断一条片子是不是拍到了当地真正的午夜，而不是拍了一个游客视角的夜晚。</p>
+
+          <h3>哪些片子可以跳过</h3>
+          <p>三类内容里有几种常见情况不太值得投入时间：镜头全程对着招牌和霓虹灯、没有人物活动的；配乐盖过环境音的；把多个街区剪成快节奏混剪、每个地点只给五秒的。这些更像素材库，而不是纪录。相反，愿意在同一个位置待够时间、保留完整对话的片子，即使画质一般，信息量也更高。</p>
+        </div>
+      </section>
+
+      <!-- 6 观看路径 -->
+      <section class="block" id="guide">
+        <div class="block-head">
+          <h2>从哪条开始看：午夜影像观看路径</h2>
+          <span class="sub">4 步</span>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <b>先确定你能投入的时长</b>
+            <p>只有二十分钟，优先深夜食堂短篇或便利店补货这类城市短片；有整块一小时，再考虑完整街区纪录；只想放着当背景，选环境音干净的城市短片。</p>
+          </div>
+          <div class="step">
+            <b>按街区而不是按城市选第一条</b>
+            <p>城市太大，街区才有具体质感。第一次接触可以从新宿二丁目或乙支路入手，这两处的空间范围小、人物集中，容易在半小时内建立对当地深夜的印象。</p>
+          </div>
+          <div class="step">
+            <b>用“转换点”判断值不值得继续</b>
+            <p>打开任何一条街区纪录，先拖到末班车前后或收摊时段，如果这一段有内容、有声音、有人物，再回头从头看；如果整段只是空镜，可以直接换下一条。</p>
+          </div>
+          <div class="step">
+            <b>同一街区看两个不同时段</b>
+            <p>同一地点的十点与两点版本对比着看，比连续看五条不同城市的片子更能理解夜生活结构。这也是三区并置观看最实际的用法。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7 FAQ -->
+      <section class="block faq" id="faq">
+        <div class="block-head">
+          <h2>常见问答</h2>
+          <span class="sub">6 个问题</span>
+        </div>
+        <details>
+          <summary>新宿二丁目的雨夜纪录一般多久更新一次？</summary>
+          <div class="ans">按目前的节奏大约每两到三周补一段，通常在同一场雨期内完成拍摄与剪辑。11 月 25 日上线的是第 4 段，主要补入雨停后的巷子画面。</div>
+        </details>
+        <details>
+          <summary>街区纪录和城市夜景短片有什么区别？</summary>
+          <div class="ans">街区纪录以人和时间为单位，保留环境音和完整动作，长度通常在 20 分钟以上；城市夜景短片更看重画面与剪辑节奏，常常没有对话，适合当背景播放。</div>
+        </details>
+        <details>
+          <summary>第一次接触，从哪一条开始看比较好？</summary>
+          <div class="ans">建议从《道玄坂背巷的凌晨拉面》这类深夜食堂短篇开始，时长合适、人物清晰、结构完整，看完能快速判断自己是否喜欢这种记录方式，再进入更长的街区纪录。</div>
+        </details>
+        <details>
+          <summary>午夜档直播回放会保留多久？</summary>
+          <div class="ans">目前是 30 天。过期后只有被整理进街区纪录的片段会长期保留，例如是隆路口的夜雨段落已经剪入对应条目。</div>
+        </details>
+        <details>
+          <summary>乙支路和弘大的深夜氛围有什么不同？</summary>
+          <div class="ans">乙支路偏老城区，布帐马车和工业风改造空间混在一起，客人年龄跨度大，收摊时间晚；弘大以年轻人和街头演出为主，热闹集中在十点到一点，之后散得很快。</div>
+        </details>
+        <details>
+          <summary>这类深夜影像通常怎么判断拍得好不好？</summary>
+          <div class="ans">主要看三点：是否保留真实环境音、有没有拍到时间转换点、镜头是否愿意在同一个位置停留足够久。满足两点的片子通常就有观看价值，画质并不是首要标准。</div>
+        </details>
+      </section>
+
+      <!-- 8 评论 -->
+      <section class="block" id="comments">
+        <div class="block-head">
+          <h2>看过的人怎么说</h2>
+          <span class="sub">16 条</span>
+        </div>
+        <div class="comments">
+          <div class="cmt"><div class="top"><span class="avatar">雨</span><span class="who">雨夜不睡</span><time>11-25</time></div><p>新宿那段雨停之后的空巷确实好，前面有点拖，但后半段撑住了。</p></div>
+          <div class="cmt"><div class="top"><span class="avatar">首</span><span class="who">首尔通勤人</span><time>11-25</time></div><p>N26 深夜巴士那条我通勤坐过，站序改完之后确实不一样了，片子里拍得挺准。</p></div>
+          <div class="cmt"><div class="top"><span class="avatar">阿</span><span class="who">阿茶不加冰</span><time>11-24</time></div><p>道玄坂拉面看得饿了，不过更想看他家汤底怎么熬的，那部分感觉剪短了。</p></div>
+          <div class="cmt"><div class="top"><span class="avatar">曼</span><span class="who">曼谷常驻</span><time>11-24</time></div><p>是隆路口固定机位两小时，说实话大部分时间没什么事，但那阵夜雨来得真巧。</p></div>
+          <div class="cmt"><div class="top"><span class="avatar">小</span><span class="who">小巷收摊人</span><time>11-23</time></div><p>考山路收摊那条比热闹时段的好看，扫街车进场那段很少见。</p></div>
+          <div class="cmt"><div class="top"><span class="avatar">弘</span><span class="who">弘大周末客</span><time>11-23</time></div><p>街头演出收摊的片子太少见了，一般都只拍最热闹的时候，这个角度不错。</p></div>
+          <div class="cmt"><div class="top"><span class="avatar">乙</span><span class="who">乙支路老客</span><time>11-22</time></div><p>布帐马车那段拍得挺还原，不过塑料桌那段机位有点近，看着有点晃。</p></div>
+          <div class="cmt"><div class="top"><span class="avatar">便</span><span class="who">便利店常客</span><time>11-22</time></div><p>补货四十分钟那个我居然看完了，时间码标得很细，能看清每个动作的时间点。</p></div>
+          <div class="cmt"><div class="top"><span class="avatar">渡</span><span class="who">渡船听水声</span><time>11-21</time></div><p>湄南河夜航只有船机声，很适合睡前放，就是十二分钟有点短。</p></div>
+          <div class="cmt"><div class="top"><span class="avatar">夜</span><span class="who">夜班编辑</span><time>11-21</time></div><p>三类内容的差别讲得挺清楚，尤其是转换点那个判断方法，实际用过确实管用。</p></div>
+          <div class="cmt"><div class="top"><span class="avatar">慢</span><span class="who">慢镜头爱好者</span><time>11-20</time></div><p>有些片子配乐太满，把街道声全盖了，这类我一般看几分钟就关掉。</p></div>
+          <div class="cmt"><div class="top"><span class="avatar">东</span><span class="who">东京出差党</span><time>11-20</time></div><p>末班车是一道分水岭这句我认同，东京十二点一过街上确实安静得很快。</p></div>
+          <div class="cmt"><div class="top"><span class="avatar">两</span><span class="who">两点还没睡</span><time>11-19</time></div><p>希望多拍点首尔凌晨的便利店和居民区，乙支路已经比较熟了。</p></div>
+          <div class="cmt"><div class="top"><span class="avatar">路</span><span class="who">路口观察员</span><time>11-19</time></div><p>固定机位直播回放这种形式挺有意思，但两小时确实长，建议标一下关键时间点。</p></div>
+          <div class="cmt"><div class="top"><span class="avatar">面</span><span class="who">面汤要喝完</span><time>11-18</time></div><p>拉面店临时休业那段补的字幕挺贴心，不然还以为是剪辑出错了。</p></div>
+          <div class="cmt"><div class="top"><span class="avatar">雨</span><span class="who">雨伞带了吗</span><time>11-18</time></div><p>整体不错，就是三座城市的片子数量不太平均，东京明显多了一些。</p></div>
+        </div>
+      </section>
+
+      <!-- 9 相关资讯 -->
+      <section class="block" id="news">
+        <div class="block-head">
+          <h2>三区午夜资讯</h2>
+          <span class="sub">6 条 · 近一月</span>
+        </div>
+        <div class="news">
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-shinjuku47/600/400" width="600" height="400" loading="lazy" alt="新宿二丁目雨夜纪录新增段落配图">
+            <div class="in">
+              <time>2026-11-25</time>
+              <h3>新宿二丁目雨夜纪录补入第 4 段</h3>
+              <p>新增雨停后巷子变空的九分钟，拍摄于同一场雨的后半程。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-euljiro18/600/400" width="600" height="400" loading="lazy" alt="首尔乙支路布帐马车补拍画面">
+            <div class="in">
+              <time>2026-11-23</time>
+              <h3>乙支路布帐马车补拍凌晨三点后画面</h3>
+              <p>原先收摊段落缺失，本月补拍完成，计划本周内上线。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-silom31/600/400" width="600" height="400" loading="lazy" alt="曼谷是隆路午夜档直播回放配图">
+            <div class="in">
+              <time>2026-11-22</time>
+              <h3>是隆路口午夜档改为每周三固定直播</h3>
+              <p>原先不定期开播，现调整为每周三晚十一点开始，回放保留 30 天。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-bus25/600/400" width="600" height="400" loading="lazy" alt="首尔深夜巴士线路调整配图">
+            <div class="in">
+              <time>2026-11-20</time>
+              <h3>首尔深夜巴士 N26 线路站序调整</h3>
+              <p>末两站顺序变更，已有纪录片的站序字幕同步更新。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-khaosan55/600/400" width="600" height="400" loading="lazy" alt="考山路夜市收摊纪录开放观看配图">
+            <div class="in">
+              <time>2026-11-17</time>
+              <h3>考山路收摊纪录取消时段限制</h3>
+              <p>原先仅在夜间开放，现已全天可播，观看入口不变。</p>
+            </div>
+          </article>
+          <article class="news-item">
+            <img src="https://picsum.photos/seed/news-nightclips09/600/400" width="600" height="400" loading="lazy" alt="城市夜景短片环境音版本上线配图">
+            <div class="in">
+              <time>2026-11-14</time>
+              <h3>城市夜景短片推出纯环境音版本</h3>
+              <p>去掉配乐、只保留街道与河面声音，首批覆盖六条短片。</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- 10 相关推荐 -->
+      <section class="block" id="related">
+        <div class="block-head">
+          <h2>延伸观看方向</h2>
+          <span class="sub">8 个</span>
+        </div>
+        <div class="tag-index">
+          <a href="/#picks">末班车后的东京</a>
+          <a href="/#picks">布帐马车文化</a>
+          <a href="/#picks">深夜便利店观察</a>
+          <a href="/#picks">湄南河夜航</a>
+          <a href="/#guide">一店一菜的短篇</a>
+          <a href="/#updates">固定机位直播回放</a>
+          <a href="/#deep">街区纪录环境音</a>
+          <a href="/#rank">通宵路线合集</a>
+        </div>
+      </section>
+
+      <!-- 11 榜单 -->
+      <section class="block" id="rank">
+        <div class="block-head">
+          <h2>三区午夜榜单</h2>
+          <span class="sub">统计至 11 月 25 日</span>
+        </div>
+        <div class="rank">
+          <div class="rank-row rank-head"><span>排名</span><span>条目</span><span>类型</span><span style="text-align:right">热度</span></div>
+          <div class="rank-row"><span class="no">01</span><span class="nm"><b>新宿二丁目雨夜三小时</b><span>东京 · 街区纪录</span></span><span class="cat">街区纪录</span><span class="heat">98.2</span></div>
+          <div class="rank-row"><span class="no">02</span><span class="nm"><b>乙支路布帐马车的午夜</b><span>首尔 · 街区纪录</span></span><span class="cat">街区纪录</span><span class="heat">95.6</span></div>
+          <div class="rank-row"><span class="no">03</span><span class="nm"><b>便利店凌晨补货的四十分钟</b><span>东京 · 城市短片</span></span><span class="cat">城市短片</span><span class="heat">93.1</span></div>
+          <div class="rank-row"><span class="no">04</span><span class="nm"><b>是隆路午夜档直播回放 11-23</b><span>曼谷 · 直播回放</span></span><span class="cat">直播回放</span><span class="heat">91.4</span></div>
+          <div class="rank-row"><span class="no">05</span><span class="nm"><b>道玄坂背巷的凌晨拉面</b><span>东京 · 深夜食堂</span></span><span class="cat">深夜食堂</span><span class="heat">89.7</span></div>
+          <div class="rank-row"><span class="no">06</span><span class="nm"><b>首尔深夜巴士 N26 全程</b><span>首尔 · 通宵路线</span></span><span class="cat">通宵路线</span><span class="heat">87.5</span></div>
+          <div class="rank-row"><span class="no">07</span><span class="nm"><b>弘大夜街的最后一支歌</b><span>首尔 · 城市短片</span></span><span class="cat">城市短片</span><span class="heat">85.2</span></div>
+          <div class="rank-row"><span class="no">08</span><span class="nm"><b>考山路凌晨四点的收摊</b><span>曼谷 · 街区纪录</span></span><span class="cat">街区纪录</span><span class="heat">83.9</span></div>
+        </div>
+        <p class="filter-note">热度综合近 30 天完整观看率、回看次数与收藏数计算。</p>
+      </section>
+
+    </main>
+
+    <!-- 右辅助栏 -->
+    <aside class="right">
+      <div class="side-card">
+        <h3>午夜热榜</h3>
+        <ol class="hot-list">
+          <li>新宿二丁目雨夜三小时</li>
+          <li>乙支路布帐马车的午夜</li>
+          <li>便利店凌晨补货的四十分钟</li>
+          <li>是隆路午夜档直播回放</li>
+          <li>道玄坂背巷的凌晨拉面</li>
+          <li>首尔深夜巴士 N26 全程</li>
+        </ol>
+      </div>
+      <div class="side-card">
+        <h3>更新流</h3>
+        <ul class="update-flow">
+          <li>新宿雨夜第 4 段上线<time>今天 09:30</time></li>
+          <li>乙支路补拍完成<time>今天 08:10</time></li>
+          <li>是隆路口回放归档<time>昨天 22:40</time></li>
+          <li>考山路开放全天观看<time>昨天 21:10</time></li>
+          <li>N26 站序字幕更新<time>11 月 23 日</time></li>
+        </ul>
+      </div>
+      <div class="side-card">
+        <h3>观看时段</h3>
+        <p style="font-size:12.5px;color:var(--text-3);margin:0">东京 22:00–04:00<br>首尔 23:00–05:00<br>曼谷 21:00–05:00</p>
+      </div>
+    </aside>
+
+  </div>
+</div>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="/#top">
+          <svg class="mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+            <rect x="1" y="1" width="38" height="38" rx="11" stroke="#ffb347" stroke-width="1.6"/>
+            <circle cx="20" cy="15" r="6" fill="#ffb347" opacity=".9"/>
+            <path d="M7 30c3.2-5.4 7.6-8.2 13-8.2S29.8 24.6 33 30" stroke="#ffb347" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+            <circle cx="20" cy="15" r="2.6" fill="#0b0f1a"/>
+          </svg>
+          <span class="name">亚洲夜色三区午夜久干观看</span>
+        </a>
+        <p>东京、首尔、曼谷三座城市的深夜街区影像与午夜档记录，按街区、时段与类型归档。</p>
+      </div>
+      <div class="foot-col">
+        <h4>街区</h4>
+        <a href="/#picks">新宿二丁目</a>
+        <a href="/#picks">涩谷道玄坂</a>
+        <a href="/#picks">首尔乙支路</a>
+        <a href="/#picks">弘大夜街</a>
+        <a href="/#picks">曼谷是隆路</a>
+      </div>
+      <div class="foot-col">
+        <h4>类型</h4>
+        <a href="/#cats">街区纪录</a>
+        <a href="/#cats">深夜食堂</a>
+        <a href="/#cats">直播回放</a>
+        <a href="/#cats">城市短片</a>
+        <a href="/#rank">通宵路线</a>
+      </div>
+      <div class="foot-col">
+        <h4>栏目</h4>
+        <a href="/#overview">领域概览</a>
+        <a href="/#deep">深度解析</a>
+        <a href="/#guide">观看路径</a>
+        <a href="/#faq">常见问答</a>
+        <a href="/#news">午夜资讯</a>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>条目信息与热度为站内整理示例，日期以 2026 年 11 月 25 日为基准。</span>
+      <span>© 2026 亚洲夜色三区午夜久干观看 · 内容归档与社区记录</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var toggle=document.getElementById('menuToggle');
+  var nav=document.getElementById('mainNav');
+  if(toggle&&nav){
+    toggle.addEventListener('click',function(){
+      var open=nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded',open?'true':'false');
+    });
+    nav.addEventListener('click',function(e){
+      if(e.target.tagName==='A'&&window.innerWidth<=1024){
+        nav.classList.remove('open');
+        toggle.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  var cards=Array.prototype.slice.call(document.querySelectorAll('#pickGrid .card'));
+  var btns=Array.prototype.slice.call(document.querySelectorAll('.cat-btn'));
+  var noResult=document.getElementById('noResult');
+
+  function applyFilter(f){
+    var shown=0;
+    cards.forEach(function(c){
+      var cat=c.getAttribute('data-cat')||'';
+      var text=c.textContent||'';
+      var hit=(f==='all')||(cat.indexOf(f)>-1)||(text.indexOf(f)>-1);
+      c.style.display=hit?'':'none';
+      if(hit)shown++;
+    });
+    if(noResult)noResult.style.display=shown?'none':'block';
+  }
+
+  btns.forEach(function(b){
+    b.addEventListener('click',function(){
+      btns.forEach(function(x){x.classList.remove('active')});
+      b.classList.add('active');
+      var f=b.getAttribute('data-filter')||'all';
+      applyFilter(f);
+      var grid=document.getElementById('pickGrid');
+      if(grid)grid.scrollIntoView({behavior:'smooth',block:'start'});
+    });
+  });
+
+  var search=document.getElementById('siteSearch');
+  if(search){
+    search.addEventListener('input',function(){
+      var q=search.value.trim();
+      if(!q){applyFilter('all');return;}
+      var shown=0;
+      cards.forEach(function(c){
+        var hit=(c.textContent||'').indexOf(q)>-1;
+        c.style.display=hit?'':'none';
+        if(hit)shown++;
+      });
+      if(noResult)noResult.style.display=shown?'none':'block';
+      btns.forEach(function(x){x.classList.remove('active')});
+    });
+  }
+})();
+</script>
+</body>
+                </html>
